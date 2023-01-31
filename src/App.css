@@ -1,38 +1,80 @@
 .App {
-  text-align: center;
+  width: 1366px;
+  height: 2567px;
+  /* UI Properties */
+  background: #a6cedc;
+  border: 1px solid #707070;
+  /* opacity: 0.35; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headerBlock {
+  align-items: center;
+  background-color: white;
+  margin: 18px auto;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 1089px;
+  height: 150px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.picture {
+  width: 266px;
+  height: 150px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.artistBlock {
+  background-color: white;
+  margin: 18px auto;
+  display: flex;
+  width: 1089px;
+  height: 150px;
+}
+
+.infoBlock {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 52px;
+  width: 771px;
+  height: 150px;
+}
+
+h1 {
+  margin: 0;
+  font: normal normal 900 42px/49px Raleway;
+}
+
+h3{
+  margin: 0;
+  font: normal normal 900 25px/32px Raleway;
+}
+
+.orangeLabel {
+  display: flex;
+  align-items: center;
+  position: relative;
+  display: flex;
+  background-color: #FF6100;
+  height: 50px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.buttonRating {
+  position: absolute;
+  right: 140px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font: normal normal medium 18px/21px Raleway;
   color: white;
+  border: 1px solid #FFFFFF;
+  width: 200px;
+  height: 33px;
+  background-color: #FF711A;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttonRating:hover{
+  cursor: pointer;
+  opacity: .8
 }
